@@ -1,0 +1,125 @@
+body {
+  /* text-align: center; */
+  background-color: #DBE2EF;
+  background-image: -webkit-linear-gradient(75deg, #3F72AF 50%, #DBE2EF 50%);
+  min-height: 1200px;
+  font-family: 'helvetica neue';
+}
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+h1 {
+
+  padding: 10px;
+}
+/* Navbar */
+.navbar {
+  background-color: #3F72AF;
+  padding: 0 5%;
+  margin-bottom: 5%;
+}
+.navbar-brand {
+  color: #fff;
+  font-weight: 900;
+  font-size: 2rem;
+}
+.nav-item {
+  margin:0 5%;
+  font-size: 1.2rem;
+}
+
+/* Heading */
+#heading {
+  background-color: #3F72AF;
+  width: 30%;
+  text-align: center;
+  margin: auto;
+  color: #fff;
+
+}
+
+/* To Do List Box */
+.box {
+  background: white;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: 50px auto;
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
+}
+.instruction {
+  text-align: center;
+  color: grey;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  text-align: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+form.item {
+  text-align: center;
+  margin-left: 20px;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+ input[type="checkbox"] {
+  margin: 30px;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #3F72AF;
+}
+
+.box button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #3F72AF;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* Input Text Box */
+.box input[type="text"]{
+  text-align:center;
+  border:none;
+  font-size: 1.2rem;
+  height: 60px;
+  background:transparent;
+  width: 313px;
+  top:10px;
+}
+ .box input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #3F72AF;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+/* New List */
+.newListName {
+  text-align: center;
+}
+
+/* Footer Section */
+footer {
+  color: white;
+  color: rgba(0,0,0,0.7);
+  text-align:center;
+  font-size: 1rem;
+}

@@ -1,0 +1,15 @@
+<%- include("header") -%>
+
+<body>
+
+  <div class="newListName">
+    <h1> Enter the name of the list you want to create</h1>
+    <form action="/newList" method="post">
+      <input type="text" name="listName" placeholder="Enter new name..." /> <br /> <br />
+      <button name="list" class="btn btn-lg btn-primary" type="submit">Create List</button>
+    </form>
+  </div>
+
+</body>
+
+<%- include("footer") -%>

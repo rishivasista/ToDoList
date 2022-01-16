@@ -1,0 +1,37 @@
+<%- include("header"); -%>
+
+
+<body>
+  <div class="box" id="heading">
+    <h1><%= listTitle%></h1>
+  </div>
+  <div class="box">
+    <p class="instruction">
+      Welcome to your To Do List!!!
+    </p>
+    <p class="instruction">
+      Hit + to add new items
+    </p>
+    <p class="instruction">
+      To delete an item, click the checkbox next to it!
+    </p>
+    <% itemsList.forEach((item) => { %>
+    <form action="/delete" method="post">
+      <div class="item">
+        <input id="itemName" type="checkbox" name="checkbox" value="<%= item._id %>" onChange="this.form.submit()">
+        <p>
+          <%= item.name %>
+        </p>
+      </div>
+      <input type="hidden" name="listName" value="<%= listTitle %>" />
+    </form>
+    <% });%>
+    <form action="/" method="post">
+      <input type="text" name="newItem" placeholder="Add item.." />
+      <button type="submit" name="list" value="<%= listTitle%>">+</button>
+    </form>
+  </div>
+
+</body>
+
+<%- include("footer"); -%>
