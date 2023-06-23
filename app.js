@@ -14,7 +14,9 @@ const __dirname = dirname(__filename);
 const app = express();
 
 // Connecting to Database
-mongoose.connect("mongodb://localhost:27017/todolistDB");
+const url = "mongodb+srv://rishivasista:Password@tododatabase.uwhy1jm.mongodb.net/?retryWrites=true&w=majority";
+const local_url = "mongodb://localhost:27017/todolistDB"
+mongoose.connect(url);
 
 // Database Schema
 const itemsSchema = new mongoose.Schema({
